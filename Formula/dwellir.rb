@@ -5,21 +5,21 @@
 class Dwellir < Formula
   desc "Dwellir CLI — Blockchain RPC infrastructure from your terminal"
   homepage "https://dwellir.com"
-  version "0.1.21"
+  version "0.1.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dwellir-public/cli/releases/download/v0.1.21/dwellir_darwin_amd64.tar.gz"
-      sha256 "b4b4679fd58a3c92235e8d0b325d8e4f8d6ff6d9833f9c6f72718745e9f3bf83"
+      url "https://github.com/dwellir-public/cli/releases/download/v0.1.22/dwellir_darwin_amd64.tar.gz"
+      sha256 "3d118810cffd8b354d629687f685aed5a95e444bc1c8ab5785ec8229dbf0d3e7"
 
       define_method(:install) do
         bin.install "dwellir"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dwellir-public/cli/releases/download/v0.1.21/dwellir_darwin_arm64.tar.gz"
-      sha256 "363fae9632b56c879f15e6b407c5ac69ce2d317cf58047d0f82cb1b41af438c3"
+      url "https://github.com/dwellir-public/cli/releases/download/v0.1.22/dwellir_darwin_arm64.tar.gz"
+      sha256 "efc0b5ea24d695e629ff1f431571ed45b964f8baf9d2b805c0dc414e4430c3f3"
 
       define_method(:install) do
         bin.install "dwellir"
@@ -29,15 +29,15 @@ class Dwellir < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dwellir-public/cli/releases/download/v0.1.21/dwellir_linux_amd64.tar.gz"
-      sha256 "a9be887f3ede125b884e19bfce01d3cf5021b77f059bc9109ce032cd72bbc4d1"
+      url "https://github.com/dwellir-public/cli/releases/download/v0.1.22/dwellir_linux_amd64.tar.gz"
+      sha256 "b39c4463c77c5a305f510fb1794a2be965e51f357376b2b63514390cf149eacc"
       define_method(:install) do
         bin.install "dwellir"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dwellir-public/cli/releases/download/v0.1.21/dwellir_linux_arm64.tar.gz"
-      sha256 "47958ee7c070ff180d9c85d3480595c18f1e5fcac922aa0501689ac807a6aa74"
+      url "https://github.com/dwellir-public/cli/releases/download/v0.1.22/dwellir_linux_arm64.tar.gz"
+      sha256 "defd19d34138b2a7d1a11cac35dda1d0d6a1fe811838d2b36ef682b8286741de"
       define_method(:install) do
         bin.install "dwellir"
       end
